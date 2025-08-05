@@ -4,7 +4,7 @@ import './ProductItem.css';
 const ProductItem = ({ product, addToCart }) => {
   return (
     <div className="product-item">
-      <img src={`/assets/${product.image.thumbnail}`} alt={product.name} />
+      <img src={`../../public/assets${product.image.thumbnail}`} alt={product.name} />
 
       <h3>{product.name}</h3>
       <p className="category">{product.category}</p>
@@ -15,3 +15,4 @@ const ProductItem = ({ product, addToCart }) => {
 };
 
 export default ProductItem;
+
